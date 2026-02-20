@@ -162,7 +162,7 @@ class Anonymizer:
 
 
     def _get_cached_boundary_pat(self, phrase: str, ignore_case: bool = False) -> re.Pattern:
-        """
+        r"""
         Cached boundary-safe pattern: match phrase as a standalone token.
         (?<!\w) and (?!\w) preserve punctuation/newlines around the match.
         """
